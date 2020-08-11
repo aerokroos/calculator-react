@@ -28,6 +28,23 @@
   color: #61dafb;
 }
 
+.firtscolum {
+
+}
+
+.numbers-btn {
+  height: 50px;
+  width: 50px;
+}
+
+.display {
+  height: 50px;
+  width: 192px;
+  font-size: 30px;
+  text-align: right;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
