@@ -1,3 +1,8 @@
+My first React project "My Calculator"
+![](src/assets/images/view_cal.PNG)
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
