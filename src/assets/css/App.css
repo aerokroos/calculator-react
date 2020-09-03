@@ -53,3 +53,35 @@
     transform: rotate(360deg);
   }
 }
+
+
+/*Buttons*/
+.btn {
+  width: 198px;
+  height: 80px;
+  font-size: 35px;
+  background-color: white;
+  border: 1px solid #000000;
+  -moz-border-radius: 20px;
+  -webkit-border-radius:20px;
+  border-color: whitesmoke;
+  margin-left: 0.1em;
+  margin-bottom: 0.1em;
+}
+.screen {
+  font-size: 50.8px;
+  height: 90px;
+  text-align: right;
+  border-radius: 20px;
+  margin-bottom: 0.2em;
+}
+.operators {
+  color: green;
+}
+.cancel {
+  color: red;
+}
+.equal {
+  background-color: green;
+  color: white;
+}

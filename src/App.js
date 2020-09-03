@@ -10,6 +10,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+      <h1>My Calculator</h1>
         <section className="components">
           <Calculator />
         </section>
