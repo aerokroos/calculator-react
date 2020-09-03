@@ -4,6 +4,7 @@ import './assets/css/App.css';
 
 // import Components
 import Calculator from './components/Calculator';
+import Result from './components/Result';
 import { render } from '@testing-library/react';
 
 class App extends Component {
@@ -23,7 +24,20 @@ class App extends Component {
 
 calculate_btn = () => {
   // Calculating...
-  this.setState({result: (eval(this.state.result) || "") + ""})
+  var check_result = ''
+        if(this.state.result.includes('--')){
+          check_result = this.state.result.replace('--','+')
+        }
+        else {
+          check_result = this.state.result
+        }
+        try {
+            this.setState({result: (eval(check_result) || "" ) + ""})
+        } catch (e) {
+            this.setState({
+                result: "error"
+            })
+        }
 };
 
 reset_btn = () => {
@@ -40,7 +54,8 @@ render() {
       <header className="App-header">
       <h1>My Calculator</h1>
         <section className="components">
-          <Calculator />
+          <Result result={this.state.result}/>
+          <Calculator onClick={this.onClick}/>
         </section>
       </header>
     </div>

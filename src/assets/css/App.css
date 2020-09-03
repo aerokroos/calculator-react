@@ -74,6 +74,8 @@
   text-align: right;
   border-radius: 20px;
   margin-bottom: 0.2em;
+  background-color: white;
+  color: black;
 }
 .operators {
   color: green;
